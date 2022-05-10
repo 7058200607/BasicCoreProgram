@@ -21,6 +21,7 @@ namespace BasicCoreProgram
             Console.WriteLine("5.Check Alphabet is VoWel or not");
             Console.WriteLine("6.check Largest Number in the given 3 value");
             Console.WriteLine("7.Check the power of 2");
+            Console.WriteLine("8.Calculate Harmonic Number");
             Console.Write("Enter A Choice :");
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -51,6 +52,10 @@ namespace BasicCoreProgram
                 case 7:
                     PowerOfTwo powerOfTwo= new PowerOfTwo();
                     powerOfTwo.ApowerOfTwo();
+                    break;
+                case 8:
+                    HarmonicNumber harmonicNumber= new HarmonicNumber();
+                    harmonicNumber.AHarmonicNumber();
                     break;
 
 
