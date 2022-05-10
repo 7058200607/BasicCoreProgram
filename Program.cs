@@ -22,6 +22,7 @@ namespace BasicCoreProgram
             Console.WriteLine("6.check Largest Number in the given 3 value");
             Console.WriteLine("7.Check the power of 2");
             Console.WriteLine("8.Calculate Harmonic Number");
+            Console.WriteLine("9.Calculate Factorization of number");
             Console.Write("Enter A Choice :");
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -57,6 +58,11 @@ namespace BasicCoreProgram
                     HarmonicNumber harmonicNumber= new HarmonicNumber();
                     harmonicNumber.AHarmonicNumber();
                     break;
+                default:
+                    Factorization factorization = new Factorization();
+                    factorization.AFactorization();
+                    break;
+
 
 
 
