@@ -18,8 +18,9 @@ namespace BasicCoreProgram
             Console.WriteLine("2.Find Quotient And Remainder");
             Console.WriteLine("3.Swap A Given Number");
             Console.WriteLine("4.Number is Even Or Odd");
-            Console.WriteLine("5. Check Alphabet is VoWel or not");
-            Console.WriteLine("6.check Largest Number in the given 3 value");    
+            Console.WriteLine("5.Check Alphabet is VoWel or not");
+            Console.WriteLine("6.check Largest Number in the given 3 value");
+            Console.WriteLine("7.Check the power of 2");
             Console.Write("Enter A Choice :");
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -47,6 +48,11 @@ namespace BasicCoreProgram
                     FindLargestNumber findLargestNumber = new FindLargestNumber();
                     findLargestNumber.ALargestNumber();
                     break;
+                case 7:
+                    PowerOfTwo powerOfTwo= new PowerOfTwo();
+                    powerOfTwo.ApowerOfTwo();
+                    break;
+
 
 
             }
