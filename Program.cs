@@ -16,6 +16,7 @@ namespace BasicCoreProgram
             Console.WriteLine("Enter A Choice :");
             Console.WriteLine("0.Flip the Coin Program");
             Console.WriteLine("1.Leap Year Program");
+            Console.WriteLine("2.Find Quotient And Remainder");
             int choice = Convert.ToInt32(Console.ReadLine());
 
             switch (choice)
@@ -26,6 +27,10 @@ namespace BasicCoreProgram
                 case 1:
                     LeapYear.ALeapYear();
                     break;
+                case 2:
+                    QuotientAndRemainder.AQuotientAndRemainder();
+                    break;
+
 
             }
             
