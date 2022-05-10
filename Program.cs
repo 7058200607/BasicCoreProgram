@@ -13,10 +13,11 @@ namespace BasicCoreProgram
 
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter A Choice :");
             Console.WriteLine("0.Flip the Coin Program");
             Console.WriteLine("1.Leap Year Program");
             Console.WriteLine("2.Find Quotient And Remainder");
+            Console.WriteLine("3.Swap A Given Number");
+            Console.Write("Enter A Choice :");
             int choice = Convert.ToInt32(Console.ReadLine());
 
             switch (choice)
@@ -29,6 +30,9 @@ namespace BasicCoreProgram
                     break;
                 case 2:
                     QuotientAndRemainder.AQuotientAndRemainder();
+                    break;
+                case 3:
+                    SwapANumber.ASwapNumber();  
                     break;
 
 
