@@ -18,6 +18,7 @@ namespace BasicCoreProgram
             Console.WriteLine("2.Find Quotient And Remainder");
             Console.WriteLine("3.Swap A Given Number");
             Console.WriteLine("4.Number is Even Or Odd");
+            Console.WriteLine("5. Check Alphabet is VoWel or not");    
             Console.Write("Enter A Choice :");
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -37,6 +38,9 @@ namespace BasicCoreProgram
                     break;
                 case 4:
                     EvenOrOddNumber.AEvenOddNumber();
+                    break;
+                case 5:
+                    VowelorConsonant.AVowelorConsonent();
                     break;
 
 
