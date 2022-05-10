@@ -5,54 +5,36 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace FlipCoinProgramProgram
+namespace BasicCoreProgram
 {
 
-    internal class FlipCoin
+    public class Program
     {
-        public void  AFlipCoin()
+
+        public static void Main(string[] args)
         {
-            int head = 0;
-            int tails = 0;
-            int input;
+            Console.WriteLine("Enter A Choice :");
+            Console.WriteLine("0.Flip the Coin Program");
+            Console.WriteLine("1.Leap Year Program");
+            int choice = Convert.ToInt32(Console.ReadLine());
 
-
-            Console.WriteLine("Enter The number of times to Flip Coin :");
-            input = Convert.ToInt32(Console.ReadLine());
-            Random random = new Random();
-            if (input > 0)
+            switch (choice)
             {
-                for (int i = 0; i < input; i++)
-                {
-                    
-                    if (random.NextDouble()<0.5)
-                    {
-                        head++;
-                        Console.WriteLine(" Head");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Tails");
-                        tails++;
-                    }
-                }
-                double Percentage_head = (double)head / input * 100;
-                Console.WriteLine("percentage of Head :" + Percentage_head +"%");
-                double percentage_tail = (double)tails / input * 100;
-                Console.WriteLine("percentage of tail :" + percentage_tail + "%");
-            }
-            else
-            {
-                Console.WriteLine("Invalid");
-            }
-        }
+                case 0:
+                    FlipCoin.AFlipCoin();
+                    break;
+                case 1:
+                    LeapYear.ALeapYear();
+                    break;
 
-        public static void Main(string[] args )
-        {
-            FlipCoin flipCoin = new FlipCoin();
-            flipCoin.AFlipCoin();   
+            }
+            
+
+
         }
 
     }
-    
+
 }
+
+   
